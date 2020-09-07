@@ -1,0 +1,75 @@
+{
+  "name": "multipack",
+  "description": "🔱 A monorepo template repository. Ideal for building shareable JavaScript packages or React modules.",
+  "version": "1.0.0",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "author": {
+    "name": "Episclera",
+    "email": "episclera@episclera.com",
+    "url": "https://episclera.com"
+  },
+  "homepage": "https://episclera.github.io/multipack/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/episclera/multipack"
+  },
+  "collective": {
+    "type": "opencollective",
+    "url": "https://opencollective.com/episclera"
+  },
+  "funding": {
+    "type": "opencollective",
+    "url": "https://opencollective.com/episclera"
+  },
+  "keywords": [
+    "lerna",
+    "monorepo",
+    "multipack"
+  ],
+  "bugs": {
+    "url": "https://github.com/episclera/multipack/issues"
+  },
+  "scripts": {
+    "build:packages": "lerna run build",
+    "build:changed:packages": "lerna run build --since",
+    "watch:packages": "lerna run watch",
+    "link:packages": "lerna bootstrap",
+    "publish:packages": "npm run link:packages && npm run build:changed:packages && lerna publish --message=\"chore: publish changed packages\"",
+    "test:packages": "jest --coverage",
+    "watch:test:packages": "jest --watch",
+    "lint:packages": "eslint ./packages --ext .ts,.tsx --max-warnings=0",
+    "fix:packages": "eslint ./packages --ext .ts,.tsx --fix --max-warnings=0",
+    "start:docs": "cd docs && npm run start",
+    "publish:docs": "cd docs && npm run deploy",
+    "postinstall": "opencollective-postinstall || exit 0"
+  },
+  "lint-staged": {
+    "*.(ts|tsx)": [
+      "npm run lint:packages"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "devDependencies": {
+    "@commitlint/cli": "9.1.2",
+    "@episclera/toolkit": "1.0.31",
+    "@types/jest": "26.0.13",
+    "eslint": "7.8.1",
+    "husky": "4.3.0",
+    "jest": "26.4.2",
+    "lerna": "3.22.1",
+    "lint-staged": "10.3.0",
+    "prettier": "2.1.1",
+    "typescript": "4.0.2"
+  },
+  "dependencies": {
+    "opencollective-postinstall": "2.0.3"
+  }
+}
