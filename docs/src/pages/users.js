@@ -16,7 +16,7 @@ function Users() {
   return (
     <Layout title={`${siteConfig.title}`} description={`${siteConfig.tagline}`}>
       <main>
-        {users && users.length && (
+        {users && users.length > 0 && (
           <section className={styles.users}>
             <div className='container'>
               <div className='row'>
