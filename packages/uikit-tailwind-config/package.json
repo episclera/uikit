@@ -11,10 +11,10 @@
     "email": "episclera@episclera.com",
     "url": "https://episclera.com"
   },
-  "homepage": "https://episclera.github.io/toolkit/",
+  "homepage": "https://episclera.github.io/uikit/",
   "repository": {
     "type": "git",
-    "url": "https://github.com/episclera/toolkit"
+    "url": "https://github.com/episclera/uikit"
   },
   "collective": {
     "type": "opencollective",
@@ -25,11 +25,11 @@
     "url": "https://opencollective.com/episclera"
   },
   "keywords": [
-    "toolkit",
+    "uikit",
     "tailwind"
   ],
   "bugs": {
-    "url": "https://github.com/episclera/toolkit/issues"
+    "url": "https://github.com/episclera/uikit/issues"
   },
   "main": "./build/index.js",
   "types": "./types",
