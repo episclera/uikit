@@ -42,14 +42,29 @@
   "devDependencies": {
     "@episclera/toolkit-utils": "1.0.12",
     "@episclera/webpack-config": "1.0.2",
+    "@testing-library/jest-dom": "5.11.4",
+    "@testing-library/react": "11.0.2",
+    "@testing-library/react-hooks": "3.4.1",
+    "@types/react": "16.9.49",
     "cross-env": "7.0.2",
+    "react": "16.13.1",
+    "react-dom": "16.13.1",
+    "react-test-renderer": "16.13.1",
     "rimraf": "3.0.2",
+    "tailwindcss": "1.8.5",
     "typescript": "4.0.2",
     "webpack": "4.44.1",
     "webpack-cli": "3.3.12"
   },
   "dependencies": {
+    "@episclera/uikit-tailwind-config": "1.0.2",
+    "mobile-detect": "1.4.4",
     "opencollective-postinstall": "2.0.3"
+  },
+  "peerDependencies": {
+    "react": ">=16.13.1",
+    "react-dom": ">=16.13.1",
+    "tailwindcss": ">=1.8.5"
   },
   "gitHead": "8635a43c9abe3ab19ed07077384ebf40fbd7717c"
 }
