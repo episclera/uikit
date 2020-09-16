@@ -2,8 +2,9 @@ import { useEffect, useState, useCallback, useContext, useMemo } from 'react'
 import isBrowser from '../isBrowser'
 import { DeviceDetectContext } from './DeviceDetectProvider'
 import themeConfig from '../themeConfig'
+import { TUseScreenSize } from '../../types'
 
-const useScreenSize = () => {
+const useScreenSize: TUseScreenSize = () => {
   const { isMobile, isTablet } = useContext(DeviceDetectContext)
 
   const themeScreenSizes = useMemo(

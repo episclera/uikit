@@ -1,12 +1,16 @@
 import React, { createContext } from 'react'
+import { DeviceDetectProviderProps } from '../../types'
 
 export const DeviceDetectContext = createContext({
-  isMobile: null,
-  isTablet: null,
-  isDesktop: null,
+  isMobile: false,
+  isTablet: false,
+  isDesktop: false,
 })
 
-const DeviceDetectProvider = ({ children, deviceContext }) => (
+const DeviceDetectProvider: React.FC<DeviceDetectProviderProps> = ({
+  children,
+  deviceContext,
+}) => (
   <DeviceDetectContext.Provider value={deviceContext}>
     {children}
   </DeviceDetectContext.Provider>

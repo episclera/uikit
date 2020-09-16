@@ -1,10 +1,35 @@
 /* istanbul ignore file */
-import toNumber from './toNumber'
+import DeviceDetectProvider, {
+  DeviceDetectContext,
+} from './mobile-detect/DeviceDetectProvider'
+import useScreenSize from './mobile-detect/useScreenSize'
+import withMobileDetect from './mobile-detect/withMobileDetect'
+import themeConfig from './themeConfig'
+import isBrowser from './isBrowser'
 import { UikitUtils } from '../types'
 
 const uikitUtils: UikitUtils = {
-  toNumber,
+  // mobile detect
+  DeviceDetectProvider,
+  DeviceDetectContext,
+  useScreenSize,
+  withMobileDetect,
+  // tailwind
+  themeConfig,
+  // utils
+  isBrowser,
 }
 
-export { toNumber }
+export {
+  // mobile detect
+  DeviceDetectProvider,
+  DeviceDetectContext,
+  useScreenSize,
+  withMobileDetect,
+  // tailwind
+  themeConfig,
+  // utils
+  isBrowser,
+}
+
 export default uikitUtils

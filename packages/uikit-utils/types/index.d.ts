@@ -1,11 +1,33 @@
-export type TToNumber = (value?: string | number) => number
+// mobile detect
 
+export interface DeviceContext {
+  isMobile: boolean
+  isTablet: boolean
+  isDesktop: boolean
+}
+
+export interface DeviceDetectProviderProps {
+  deviceContext: DeviceContext
+}
+
+export interface UseScreenSize {
+  isXsScreenSize: boolean
+  isSmScreenSize: boolean
+  isMdScreenSize: boolean
+  isLgScreenSize: boolean
+  isXlScreenSize: boolean
+  isXxlScreenSize: boolean
+}
+
+export type TUseScreenSize = () => UseScreenSize
+
+// main pack
 export interface UikitUtils {
-  toNumber: TToNumber
+  DeviceDetectProvider: DeviceDetectProviderProps
 }
 
 // package exports
-export const toNumber: TToNumber
+export const DeviceDetectProvider: DeviceDetectProviderProps
 
 declare const uikitUtils: UikitUtils
 

@@ -2,7 +2,7 @@ import React from 'react'
 import MobileDetect from 'mobile-detect'
 
 const withMobileDetect = Component => {
-  const WrappedComponent = props => <Component {...props} />
+  const WrappedComponent: React.FC = props => <Component {...props} />
 
   WrappedComponent.displayName = `withMobileDetect(${
     Component.displayName || Component.name || 'Component'
