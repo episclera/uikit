@@ -7,7 +7,7 @@ export interface DeviceContext {
 }
 
 export interface DeviceDetectProviderProps {
-  deviceContext: DeviceContext
+  deviceContext: React.Context<DeviceContext>
 }
 
 export interface UseScreenSize {
@@ -23,11 +23,13 @@ export type TUseScreenSize = () => UseScreenSize
 
 // main pack
 export interface UikitUtils {
-  DeviceDetectProvider: DeviceDetectProviderProps
+  DeviceDetectProvider: React.FC<DeviceDetectProviderProps>
+  DeviceDetectContext: React.Context<DeviceContext>
 }
 
 // package exports
-export const DeviceDetectProvider: DeviceDetectProviderProps
+export const DeviceDetectProvider: React.FC<DeviceDetectProviderProps>
+export const DeviceDetectContext: React.Context<DeviceContext>
 
 declare const uikitUtils: UikitUtils
 

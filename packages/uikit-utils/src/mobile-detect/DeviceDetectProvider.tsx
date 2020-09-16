@@ -1,7 +1,7 @@
 import React, { createContext } from 'react'
-import { DeviceDetectProviderProps } from '../../types'
+import { DeviceContext, DeviceDetectProviderProps } from '../../types'
 
-export const DeviceDetectContext = createContext({
+export const DeviceDetectContext: React.Context<DeviceContext> = createContext({
   isMobile: false,
   isTablet: false,
   isDesktop: false,
