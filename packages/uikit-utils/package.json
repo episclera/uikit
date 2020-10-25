@@ -1,7 +1,7 @@
 {
   "name": "@episclera/uikit-utils",
   "description": "A set of utils for uikit monorepo repository.",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "license": "MIT",
   "publishConfig": {
     "access": "public"
@@ -56,7 +56,7 @@
     "webpack-cli": "4.1.0"
   },
   "dependencies": {
-    "@episclera/uikit-tailwind-config": "1.0.2",
+    "@episclera/uikit-tailwind-config": "^1.0.3",
     "mobile-detect": "1.4.4",
     "opencollective-postinstall": "2.0.3"
   },
