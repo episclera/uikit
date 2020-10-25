@@ -1,3 +1,4 @@
+/* eslint-disable no-use-before-define */
 import React, { createContext } from 'react'
 import { DeviceDetectProviderProps } from '../../types'
 
