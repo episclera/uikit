@@ -1,7 +1,7 @@
 import { useEffect, useState, useCallback, useContext, useMemo } from 'react'
+import themeConfig from '@episclera/uikit-tailwind-config'
 import isBrowser from '../isBrowser'
 import { DeviceDetectContext } from './DeviceDetectProvider'
-import themeConfig from '../themeConfig'
 import { TUseScreenSize } from '../../types'
 
 const useScreenSize: TUseScreenSize = () => {

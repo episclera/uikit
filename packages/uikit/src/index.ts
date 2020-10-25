@@ -5,15 +5,13 @@ import {
   DeviceDetectContext,
   useScreenSize,
   withMobileDetect,
-  themeConfig,
   isBrowser,
 } from '@episclera/uikit-utils'
 import { Uikit } from '../types'
 
 const uikit: Uikit = {
   // tailwind
-  uikitTailwindConfig, // raw config
-  themeConfig, // resolved with tailwind utils
+  uikitTailwindConfig,
   // mobile detect
   DeviceDetectProvider,
   DeviceDetectContext,
@@ -25,8 +23,7 @@ const uikit: Uikit = {
 
 export {
   // tailwind
-  uikitTailwindConfig, // raw config
-  themeConfig, // resolved with tailwind utils
+  uikitTailwindConfig,
   // mobile detect
   DeviceDetectProvider,
   DeviceDetectContext,

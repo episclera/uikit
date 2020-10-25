@@ -4,7 +4,6 @@ import DeviceDetectProvider, {
 } from './mobile-detect/DeviceDetectProvider'
 import useScreenSize from './mobile-detect/useScreenSize'
 import withMobileDetect from './mobile-detect/withMobileDetect'
-import themeConfig from './themeConfig'
 import isBrowser from './isBrowser'
 import { UikitUtils } from '../types'
 
@@ -14,8 +13,6 @@ const uikitUtils: UikitUtils = {
   DeviceDetectContext,
   useScreenSize,
   withMobileDetect,
-  // tailwind
-  themeConfig,
   // utils
   isBrowser,
 }
@@ -26,8 +23,6 @@ export {
   DeviceDetectContext,
   useScreenSize,
   withMobileDetect,
-  // tailwind
-  themeConfig,
   // utils
   isBrowser,
 }

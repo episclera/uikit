@@ -1,4 +1,4 @@
-/* eslint-disable react/jsx-props-no-spreading */
+/* eslint-disable react/jsx-props-no-spreading, no-use-before-define */
 import React from 'react'
 import MobileDetect from 'mobile-detect'
 import { DeviceContext, TWithMobileDetect } from '../../types'

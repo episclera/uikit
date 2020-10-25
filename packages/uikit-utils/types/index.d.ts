@@ -48,8 +48,6 @@ export interface UikitUtils {
   DeviceDetectContext: React.Context<DeviceContext>
   useScreenSize: TUseScreenSize
   withMobileDetect: TWithMobileDetect
-  // tailwind
-  themeConfig: ThemeConfig
   // utils
   isBrowser: TIsBrowser
 }
@@ -60,8 +58,6 @@ export const DeviceDetectProvider: React.FC<DeviceDetectProviderProps>
 export const DeviceDetectContext: React.Context<DeviceContext>
 export const useScreenSize: TUseScreenSize
 export const withMobileDetect: TWithMobileDetect
-// tailwind
-export const themeConfig: ThemeConfig
 // utils
 export const isBrowser: TIsBrowser
 
