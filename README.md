@@ -22,33 +22,24 @@
 
 Install: `npm i @episclera/uikit`
 
-- First of all in your `tailwind.config.js` file you need to export `uikitTailwindConfig` because all components are dependent from tailwind helper-classes.
+1. First of all in your `tailwind.config.js` file you need to export `uikitTailwindConfig` because all components are dependent from tailwind helper-classes.
 
 ```js
 const { uikitTailwindConfig } = require('@episclera/uikit')
 // OR install and import just what you need separately: const uikitTailwindConfig = require('@episclera/uikit-tailwind-config')
 
 module.exports = uikitTailwindConfig
-
-// NOTE: If you need to rewrite/customize some values you can use `mergeConfigs` util from `@episclera/toolkit`.
-const { uikitTailwindConfig } = require('@episclera/uikit')
-const { mergeConfigs } = require('@episclera/toolkit')
-// OR install and import just what you need separately: const uikitTailwindConfig = require('@episclera/uikit-tailwind-config')
-// const { mergeConfigs } = require('@episclera/toolkit-utils')
-
-module.exports = mergeConfigs(uikitTailwindConfig, {
-  theme: {
-    extend: {
-      colors: {
-        'primary-color': '#6398de',
-      },
-    },
-  },
-})
 ```
 
 NOTE: `tailwindConfig` are available to be used also from [@episclera/toolkit](https://github.com/episclera/toolkit) `const { tailwindConfig } = require('@episclera/toolkit')`
 and is also mirrored in [@episclera/tailwind-config](https://github.com/episclera/toolkit/tree/master/packages/tailwind-config) just FYI.
+
+2. Then in your main layout file you need to import preconfigured style files
+
+```js
+import '@episclera/uikit/styles/tailwind.css'
+import '@episclera/uikit/styles/antd.less'
+```
 
 ## Contributing
 
