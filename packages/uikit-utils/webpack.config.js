@@ -5,8 +5,13 @@ const {
 } = require('@episclera/webpack-config')
 const { mergeConfigs } = require('@episclera/toolkit-utils')
 
-module.exports = mergeConfigs(commonWebpackConfig, packageWebpackConfig, uiPackageWebpackConfig, {
-  output: {
-    library: 'uikitUtils',
+module.exports = mergeConfigs(
+  commonWebpackConfig,
+  packageWebpackConfig,
+  uiPackageWebpackConfig,
+  {
+    output: {
+      library: 'uikitUtils',
+    },
   },
-})
+)

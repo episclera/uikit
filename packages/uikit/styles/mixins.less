@@ -1,0 +1,38 @@
+@import './vars';
+
+// responsive
+.xs(@rules) {
+  @media only screen and (max-width: @screen-sm) {
+    @rules();
+  }
+}
+
+.sm(@rules) {
+  @media only screen and (min-width: @screen-sm) {
+    @rules();
+  }
+}
+
+.md(@rules) {
+  @media only screen and (min-width: @screen-md) {
+    @rules();
+  }
+}
+
+.lg(@rules) {
+  @media only screen and (min-width: @screen-lg) {
+    @rules();
+  }
+}
+
+.xl(@rules) {
+  @media only screen and (min-width: @screen-xl) {
+    @rules();
+  }
+}
+
+.xxl(@rules) {
+  @media only screen and (min-width: @screen-xxl) {
+    @rules();
+  }
+}
