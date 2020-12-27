@@ -38,20 +38,20 @@
     "postinstall": "opencollective-postinstall || exit 0"
   },
   "devDependencies": {
-    "@episclera/toolkit-utils": "1.0.21",
-    "@episclera/webpack-config": "1.0.11",
+    "@episclera/toolkit-utils": "1.0.23",
+    "@episclera/webpack-config": "1.0.13",
     "@types/react": "17.0.0",
     "cross-env": "7.0.3",
     "react": "17.0.1",
     "react-dom": "17.0.1",
     "rimraf": "3.0.2",
-    "webpack": "5.10.1",
-    "webpack-cli": "4.2.0"
+    "webpack": "5.11.0",
+    "webpack-cli": "4.3.0"
   },
   "dependencies": {
     "@episclera/uikit-tailwind-config": "^1.0.7",
     "@episclera/uikit-utils": "^1.0.6",
-    "antd": "4.9.3",
+    "antd": "4.9.4",
     "opencollective-postinstall": "2.0.3",
     "tailwindcss": "2.0.2"
   },
