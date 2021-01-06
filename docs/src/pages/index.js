@@ -10,7 +10,6 @@ import Funding from '../components/Funding'
 import features from '../data/features'
 import users from '../data/users'
 import fundings from '../data/fundings'
-import styles from './styles.module.css';
 
 function Home() {
   const context = useDocusaurusContext();
@@ -19,15 +18,14 @@ function Home() {
     <Layout
       title={`${siteConfig.title}`}
       description={`${siteConfig.tagline}`}>
-      <header className={classnames('hero hero--primary', styles.heroBanner)}>
+      <header className={classnames('hero hero--primary')}>
         <div className="container">
           <h1 className="hero__title">{siteConfig.title}</h1>
           <p className="hero__subtitle">{siteConfig.tagline}</p>
-          <div className={styles.buttons}>
+          <div>
             <Link
               className={classnames(
                 'button button--light button--lg',
-                styles.getStarted,
               )}
               to={useBaseUrl('docs/doc-introduction')}>
               Get Started
@@ -37,7 +35,7 @@ function Home() {
       </header>
       <main>
         {features && features.length && (
-          <section className={styles.features}>
+          <section >
             <div className="container">
               <div className="row">
                 {features.map((props, idx) => (
@@ -48,7 +46,7 @@ function Home() {
           </section>
         )}
         {users && users.length > 0 && (
-          <section className={styles.users}>
+          <section>
             <div className="container">
               <div className="row">
                 <div className="col col--12">
@@ -68,7 +66,6 @@ function Home() {
                   <Link
                     className={classnames(
                       'button button--primary button--lg',
-                      styles.getStarted,
                     )}
                     to={useBaseUrl('users')}>
                     More Users
@@ -79,7 +76,7 @@ function Home() {
           </section>
         )}
         {fundings && fundings.length && (
-          <section className={styles.fundings}>
+          <section>
             <div className="container">
               <div className="row">
                 <div className="col col--12">
