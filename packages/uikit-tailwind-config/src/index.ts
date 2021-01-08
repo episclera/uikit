@@ -1,4 +1,5 @@
 /* istanbul ignore file */
+import { red, gold, green, blue } from '@ant-design/colors'
 import { UikitTailwindConfig } from '../types'
 
 /* istanbul ignore next */
@@ -49,38 +50,28 @@ const uikitTailwindConfig: UikitTailwindConfig = {
   theme: {
     colors: {
       // Replacing default (BIG TW) color palette, cause' of big bundle size
-      // NOTE: brand colors should be same as in ant-design
-      'primary-color': '#1890ff', // primary color for all components
-      'success-color': '#52c41a', // success state color
-      'warning-color': '#faad14', // warning state color
-      'error-color': '#f5222d', // error state color
-      'heading-color': 'rgba(0, 0, 0, 0.85)', // heading text color
+      // NOTE: colors should be same as in ant-design default theme https://github.com/ant-design/ant-design/blob/0e4360038e79c7bd8bc7eb33dc56b7d0ccd481c4/components/style/themes/default.less
+      'primary-color': blue.primary,
+      'success-color': green.primary,
+      'warning-color': gold.primary,
+      'error-color': red[4],
       color: 'rgba(0, 0, 0, 0.65)', // base text color
       'color-secondary': 'rgba(0, 0, 0, 0.45)', // secondary text color
       'disabled-color': 'rgba(0, 0, 0, 0.25)', // disable state color
-      'border-color-base': '#d9d9d9', // base border color
       // adding few default colors utils
       transparent: 'transparent',
       current: 'currentColor',
-      white: 'white',
-      black: 'black',
+      white: '#ffffff',
     },
     extend: {
       spacing: {
         'pxl-60': '60px',
-        'pxl-100': '100px',
         'pxl-150': '150px',
-        'pxl-200': '200px',
-        'pxl-250': '250px',
       },
       minHeight: {
         '11/12-screen': '90vh',
-        '1/2-screen': '50vh',
       },
       maxHeight: {
-        '11/12-screen': '90vh',
-        '4/5-screen': '80vh',
-        '3/4-screen': '75vh',
         '3/5-screen': '60vh',
         '1/2-screen': '50vh',
       },
@@ -89,7 +80,7 @@ const uikitTailwindConfig: UikitTailwindConfig = {
       center: true, // To center containers
     },
     screens: {
-      // NOTE: breakpoints should be same as in ant-design
+      // NOTE: breakpoints should be same as in ant-design default theme https://github.com/ant-design/ant-design/blob/0e4360038e79c7bd8bc7eb33dc56b7d0ccd481c4/components/style/themes/default.less
       xs: { max: '576px' }, // < 576
       sm: '576px', // >= 576
       md: '768px', // >=768
