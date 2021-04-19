@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# 1.3.0 (2021-04-19)
+
+
+### Features
+
+* change tw mode to jit ([6379162](https://github.com/episclera/weaver/commit/6379162de814d90d72b718c23099d1f67111d3fa))
+
+
+
+
+
 ## 1.2.2 (2021-03-19)
 
 
