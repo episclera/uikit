@@ -26,6 +26,7 @@ Install: `npm i @episclera/weaver`
 
 ```js
 import '@episclera/weaver/styles/main.less'
+import '@episclera/weaver/styles/tailwind.css'
 ```
 
 2. Then in your main layout file (\_app.tsx) you need to wrapp the entire app in (COnfigProvider and DeviceDetectProvider)
