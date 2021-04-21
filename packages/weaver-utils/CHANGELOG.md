@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# 1.5.0 (2021-04-21)
+
+
+### Features
+
+* add common vars to tw conf ([9bc7757](https://github.com/episclera/weaver/commit/9bc7757f6598b6fc2d0d7742ec01bd44f678b468))
+
+
+
+
+
 # 1.4.0 (2021-04-20)
 
 
