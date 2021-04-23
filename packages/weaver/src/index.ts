@@ -66,7 +66,7 @@ import {
   Upload,
   version,
 } from 'antd'
-import weaverTailwindConfig from '@episclera/weaver-tailwind-config'
+import { weaverTheme } from '@episclera/weaver-theme'
 import {
   DeviceDetectProvider,
   DeviceDetectContext,
@@ -143,8 +143,8 @@ const weaver: Weaver = {
   Typography,
   Upload,
   version,
-  // tailwind
-  weaverTailwindConfig,
+  // theme
+  weaverTheme,
   // mobile detect
   DeviceDetectProvider,
   DeviceDetectContext,
@@ -221,8 +221,8 @@ export {
   Typography,
   Upload,
   version,
-  // tailwind
-  weaverTailwindConfig,
+  // theme
+  weaverTheme,
   // mobile detect
   DeviceDetectProvider,
   DeviceDetectContext,

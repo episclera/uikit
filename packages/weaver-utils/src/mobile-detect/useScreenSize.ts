@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-unsafe-member-access */
 import { useEffect, useState, useCallback, useContext, useMemo } from 'react'
-import themeConfig from '@episclera/weaver-tailwind-config'
+import { weaverTheme } from '@episclera/weaver-theme'
 import isBrowser from '../isBrowser'
 import { DeviceDetectContext } from './DeviceDetectProvider'
 import { TUseScreenSize } from '../../types'
@@ -10,19 +10,19 @@ const useScreenSize: TUseScreenSize = () => {
 
   const themeScreenSizes = useMemo(
     () => ({
-      xs: Number(`${themeConfig.theme.screens.xs.max}`.replace(/\D/g, '')),
-      sm: Number(`${themeConfig.theme.screens.sm}`.replace(/\D/g, '')),
-      md: Number(`${themeConfig.theme.screens.md}`.replace(/\D/g, '')),
-      lg: Number(`${themeConfig.theme.screens.lg}`.replace(/\D/g, '')),
-      xl: Number(`${themeConfig.theme.screens.xl}`.replace(/\D/g, '')),
-      xxl: Number(`${themeConfig.theme.screens.xxl}`.replace(/\D/g, '')),
+      xs: Number(`${weaverTheme('screen-xs')}`.replace(/\D/g, '')),
+      sm: Number(`${weaverTheme('screen-sm')}`.replace(/\D/g, '')),
+      md: Number(`${weaverTheme('screen-md')}`.replace(/\D/g, '')),
+      lg: Number(`${weaverTheme('screen-lg')}`.replace(/\D/g, '')),
+      xl: Number(`${weaverTheme('screen-xl')}`.replace(/\D/g, '')),
+      xxl: Number(`${weaverTheme('screen-xxl')}`.replace(/\D/g, '')),
     }),
     [],
   )
 
   /* istanbul ignore next (because we need a Request from browser to node env to fully test it) */
   const guessedSizeFromDeviceContext = useMemo(() => {
-    if (isMobile) return themeScreenSizes.xs - 1 // decrease 1 unit because "isXsScreenSize" is calculated bellow using "<" symbol but not "<="
+    if (isMobile) return themeScreenSizes.xs
     if (isTablet) return themeScreenSizes.md
 
     return themeScreenSizes.lg
@@ -50,9 +50,10 @@ const useScreenSize: TUseScreenSize = () => {
 
   const boolRepresentationsOfScreenSizes = useMemo(
     () => ({
-      isXsAndLessScreenSize: screenSize < themeScreenSizes.xs,
-      isXsScreenSize: screenSize < themeScreenSizes.xs,
-      isXsAndGreaterScreenSize: screenSize >= 0,
+      isXsAndLessScreenSize: screenSize < themeScreenSizes.sm,
+      isXsScreenSize:
+        screenSize >= themeScreenSizes.xs && screenSize < themeScreenSizes.sm,
+      isXsAndGreaterScreenSize: screenSize >= themeScreenSizes.xs,
       isSmAndLessScreenSize: screenSize < themeScreenSizes.md,
       isSmScreenSize:
         screenSize >= themeScreenSizes.sm && screenSize < themeScreenSizes.md,

@@ -50,7 +50,7 @@
     "webpack-cli": "4.6.0"
   },
   "dependencies": {
-    "@episclera/weaver-tailwind-config": "^1.5.0",
+    "@episclera/weaver-theme": "^1.0.0",
     "@episclera/weaver-utils": "^1.5.0",
     "antd": "4.15.2",
     "opencollective-postinstall": "2.0.3",
