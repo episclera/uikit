@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/no-unsafe-member-access, @typescript-eslint/no-unsafe-call, @typescript-eslint/ban-types */
 import React from 'react'
 import { render, act } from '@testing-library/react'
-import themeConfig from '@episclera/weaver-tailwind-config'
+import { weaverTheme } from '@episclera/weaver-theme'
 import DeviceDetectProvider from '../DeviceDetectProvider'
 import useScreenSize from '../useScreenSize'
 import { DeviceContext } from '../../../types'
@@ -56,8 +56,9 @@ describe('useScreenSize', () => {
 
     act(() => {
       // set size to extra small mobile one
-      global.innerWidth =
-        Number(`${themeConfig.theme.screens.xs.max}`.replace(/\D/g, '')) - 1 // decrease 1 unit because "isXsScreenSize" is calculated bellow using "<" symbol but not "<="
+      global.innerWidth = Number(
+        `${weaverTheme('screen-xs')}`.replace(/\D/g, ''),
+      )
       global.dispatchEvent(new Event('resize'))
     })
 
@@ -76,7 +77,7 @@ describe('useScreenSize', () => {
     act(() => {
       // set size to small mobile one
       global.innerWidth = Number(
-        `${themeConfig.theme.screens.sm}`.replace(/\D/g, ''),
+        `${weaverTheme('screen-sm')}`.replace(/\D/g, ''),
       )
       global.dispatchEvent(new Event('resize'))
     })
@@ -96,7 +97,7 @@ describe('useScreenSize', () => {
     act(() => {
       // set size to medium one
       global.innerWidth = Number(
-        `${themeConfig.theme.screens.md}`.replace(/\D/g, ''),
+        `${weaverTheme('screen-md')}`.replace(/\D/g, ''),
       )
       global.dispatchEvent(new Event('resize'))
     })
@@ -116,7 +117,7 @@ describe('useScreenSize', () => {
     act(() => {
       // set size to large one
       global.innerWidth = Number(
-        `${themeConfig.theme.screens.lg}`.replace(/\D/g, ''),
+        `${weaverTheme('screen-lg')}`.replace(/\D/g, ''),
       )
       global.dispatchEvent(new Event('resize'))
     })
@@ -136,7 +137,7 @@ describe('useScreenSize', () => {
     act(() => {
       // set size to extra large one
       global.innerWidth = Number(
-        `${themeConfig.theme.screens.xl}`.replace(/\D/g, ''),
+        `${weaverTheme('screen-xl')}`.replace(/\D/g, ''),
       )
       global.dispatchEvent(new Event('resize'))
     })
@@ -156,7 +157,7 @@ describe('useScreenSize', () => {
     act(() => {
       // set size to 2x extra large one
       global.innerWidth = Number(
-        `${themeConfig.theme.screens.xxl}`.replace(/\D/g, ''),
+        `${weaverTheme('screen-xxl')}`.replace(/\D/g, ''),
       )
       global.dispatchEvent(new Event('resize'))
     })
@@ -176,8 +177,7 @@ describe('useScreenSize', () => {
 
   it('should set correct initial screen size', () => {
     // set size to extra small mobile one
-    global.innerWidth =
-      Number(`${themeConfig.theme.screens.xs.max}`.replace(/\D/g, '')) - 1 // decrease 1 unit because "isXsScreenSize" is calculated bellow using "<" symbol but not "<="
+    global.innerWidth = Number(`${weaverTheme('screen-xs')}`.replace(/\D/g, ''))
     global.dispatchEvent(new Event('resize'))
 
     let isGuessedScreenSizeXs = false

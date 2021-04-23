@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/no-unsafe-call, @typescript-eslint/no-unsafe-member-access, @typescript-eslint/ban-types */
 import React from 'react'
 import { act, render } from '@testing-library/react'
-import themeConfig from '@episclera/weaver-tailwind-config'
+import { weaverTheme } from '@episclera/weaver-theme'
 import DeviceDetectProvider from '../DeviceDetectProvider'
 import useScreenSize from '../useScreenSize'
 import { DeviceContext } from '../../../types'
@@ -39,8 +39,9 @@ describe('DeviceDetectProvider', () => {
 
     act(() => {
       // set size to extra small mobile one
-      global.innerWidth =
-        Number(`${themeConfig.theme.screens.xs.max}`.replace(/\D/g, '')) - 1 // decrease 1 unit because "isXsScreenSize" is calculated bellow using "<" symbol but not "<="
+      global.innerWidth = Number(
+        `${weaverTheme('screen-xs')}`.replace(/\D/g, ''),
+      )
       global.dispatchEvent(new Event('resize'))
     })
 
