@@ -1,8 +1,6 @@
-/* istanbul ignore file */
 import { WeaverThemePluginLess, WeaverUnFlattenConfig } from '../types'
 import weaverTheme from './weaverTheme'
 
-/* istanbul ignore next */
 const weaverThemePluginLess: WeaverThemePluginLess = {
   install: (_less, _pluginManager, functions) => {
     functions.add('weaverTheme', val => {
@@ -28,5 +26,4 @@ const weaverThemePluginLess: WeaverThemePluginLess = {
   },
 }
 
-/* istanbul ignore next */
 export default weaverThemePluginLess
