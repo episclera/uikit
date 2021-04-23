@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 1.5.3 (2021-04-23)
+
+
+### Bug Fixes
+
+* less plugin arg type ([a64f153](https://github.com/episclera/weaver/commit/a64f15338cab3c3190a645b0a261e56788bd92a1))
+
+
+
+
+
 ## 1.5.2 (2021-04-23)
 
 **Note:** Version bump only for package @episclera/weaver-utils
