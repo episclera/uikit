@@ -16,7 +16,10 @@ export interface WeaverThemePluginLess {
     less: any,
     pluginManager: any,
     functions: {
-      add: (name: string, pluginMethod: (val?: string) => string) => any
+      add: (
+        name: string,
+        pluginMethod: (node?: { value?: string }) => string,
+      ) => any
     },
   ) => void
 }

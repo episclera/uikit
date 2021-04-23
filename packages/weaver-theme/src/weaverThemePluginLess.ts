@@ -3,9 +3,9 @@ import weaverTheme from './weaverTheme'
 
 const weaverThemePluginLess: WeaverThemePluginLess = {
   install: (_less, _pluginManager, functions) => {
-    functions.add('weaverTheme', val => {
-      if (val) {
-        return weaverTheme(val) as string
+    functions.add('weaverTheme', node => {
+      if (node?.value) {
+        return weaverTheme(node?.value) as string
       }
 
       const unFlattenConfig = Object.values(weaverTheme()).reduce(
