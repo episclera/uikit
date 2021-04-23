@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 1.5.4 (2021-04-23)
+
+
+### Bug Fixes
+
+* less plugin ([b3440d7](https://github.com/episclera/weaver/commit/b3440d70d6d8748e5ff71ac2cd8801a1c5fc523c))
+
+
+
+
+
 ## 1.5.3 (2021-04-23)
 
 
