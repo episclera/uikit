@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# 1.7.0 (2021-04-28)
+
+
+### Features
+
+* full move to mp ([2a794ed](https://github.com/episclera/weaver/commit/2a794edb98cd3901bc9ef69e1c000a73c9bd1518))
+
+
+
+
+
 ## 1.6.2 (2021-04-24)
 
 
