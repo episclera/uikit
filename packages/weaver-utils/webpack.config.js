@@ -2,8 +2,8 @@
 const {
   commonWebpackConfig,
   packageWebpackConfig,
-} = require('@episclera/webpack-config')
-const { mergeConfigs } = require('@episclera/multipack-utils')
+  mergeConfigs,
+} = require('@episclera/multipack')
 
 module.exports = mergeConfigs(commonWebpackConfig, packageWebpackConfig, {
   output: {
