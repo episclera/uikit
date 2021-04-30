@@ -4,10 +4,8 @@ import MobileDetect from 'mobile-detect'
 import { DeviceContext, TWithMobileDetect } from '../../types'
 
 const withMobileDetect: TWithMobileDetect = Component => {
-  /* istanbul ignore next (no need to test it) */
   const WrappedComponent: any = (props: any) => <Component {...props} />
 
-  /* istanbul ignore next (no need to test it) */
   WrappedComponent.displayName = `withMobileDetect(${
     Component.displayName || Component.name || 'Component'
   })`
@@ -25,9 +23,7 @@ const withMobileDetect: TWithMobileDetect = Component => {
       isDesktop: !md.phone() && !md.tablet(),
     }
 
-    /* istanbul ignore next */
     let pageProps = {}
-    /* istanbul ignore next */
     if (Component.getInitialProps) {
       pageProps = await Component.getInitialProps(rawContext)
     }

@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-unsafe-member-access, @typescript-eslint/no-unsafe-call, @typescript-eslint/ban-types */
 import React from 'react'
 import { render, act } from '@testing-library/react'
 import { weaverTheme } from '@episclera/weaver-theme'
@@ -40,7 +39,7 @@ describe('useScreenSize', () => {
       isXxlScreenSize: false,
       isXxlAndGreaterScreenSize: false,
     }
-    const Component: React.FC<{}> = () => {
+    const Component: React.FC = () => {
       const screenSizeContext = useScreenSize()
       guessedScreenSizes = screenSizeContext
       return <div />
@@ -181,7 +180,7 @@ describe('useScreenSize', () => {
     global.dispatchEvent(new Event('resize'))
 
     let isGuessedScreenSizeXs = false
-    const Component: React.FC<{}> = () => {
+    const Component: React.FC = () => {
       const { isXsScreenSize } = useScreenSize()
       isGuessedScreenSizeXs = isXsScreenSize
       return <div />

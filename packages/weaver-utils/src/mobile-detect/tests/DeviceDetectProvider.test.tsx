@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-unsafe-call, @typescript-eslint/no-unsafe-member-access, @typescript-eslint/ban-types */
 import React from 'react'
 import { act, render } from '@testing-library/react'
 import { weaverTheme } from '@episclera/weaver-theme'
@@ -21,7 +20,7 @@ beforeEach(() => {
 describe('DeviceDetectProvider', () => {
   it('should provide device context and re-provide this context with new values when window is resized', () => {
     let isGuessedScreenSizeXs = false
-    const Component: React.FC<{}> = () => {
+    const Component: React.FC = () => {
       const { isXsScreenSize } = useScreenSize()
       isGuessedScreenSizeXs = isXsScreenSize
       return <div />
