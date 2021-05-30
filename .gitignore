@@ -69,3 +69,19 @@ yarn-error.log
 # Build
 **/build/
 
+# Strapi directories
+exports
+.cache
+public/uploads/*
+!public/uploads/.gitkeep
+.tmp
+*.sql
+*.sqlite
+*.sqlite3
+
+# Next directories
+.next
+**/out
+
+# ENV directories
+.env
