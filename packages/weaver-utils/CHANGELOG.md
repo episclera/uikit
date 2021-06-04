@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# 1.10.0 (2021-06-04)
+
+
+### Features
+
+* add row defaults ([5ce7a5a](https://github.com/episclera/weaver/commit/5ce7a5ad7f0b0ee68e00330b8266f342ad4f65ef))
+
+
+
+
+
 ## 1.9.2 (2021-05-31)
 
 **Note:** Version bump only for package @episclera/weaver-utils
