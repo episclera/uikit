@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 1.5.1 (2021-06-05)
+
+
+### Bug Fixes
+
+* tw conf comments ([941d57f](https://github.com/episclera/weaver/commit/941d57f9196e38b7f2ff5402a2c41e3b992cf596))
+
+
+
+
+
 # 1.5.0 (2021-06-04)
 
 
