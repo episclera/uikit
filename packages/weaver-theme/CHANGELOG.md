@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# 1.7.0 (2021-06-13)
+
+
+### Features
+
+* add space element ([643471e](https://github.com/episclera/weaver/commit/643471e77d954fda749d7667542c68226c4e08ba))
+
+
+
+
+
 ## 1.6.2 (2021-06-08)
 
 
