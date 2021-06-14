@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 1.6.1 (2021-06-14)
+
+
+### Bug Fixes
+
+* hardcodes style border var ([2996b7e](https://github.com/episclera/weaver/commit/2996b7ea350b1dc62fb02d10b7d8c17487b85ebf))
+
+
+
+
+
 # 1.6.0 (2021-06-13)
 
 
