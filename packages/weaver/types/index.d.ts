@@ -1,6 +1,8 @@
 import React from 'react'
 import { RowProps, SpaceProps, PageHeaderProps, SpinProps } from 'antd'
+import { TextAreaProps } from 'antd/lib/input'
 import { LinkProps as NextLinkProps } from 'next/link'
+import { ReactMarkdownOptions } from 'react-markdown'
 
 // Antd and Next overridden components
 export type ContainerProps = React.HTMLAttributes<HTMLDivElement>
@@ -19,6 +21,15 @@ export type TPageHeader = React.FC<PageHeaderProps>
 
 export type TSpin = React.FC<SpinProps>
 
+export type TMarkdownPreview = React.FC<ReactMarkdownOptions>
+
+export type TMarkdownEditor = React.FC<TextAreaProps>
+
+export interface MarkdownWrapper {
+  Preview: TMarkdownPreview
+  Editor: TMarkdownEditor
+}
+
 // export packages
 export * from 'antd'
 export * from '@episclera/weaver-icons'
@@ -30,3 +41,4 @@ export const Row: TRow
 export const Space: TSpace
 export const PageHeader: TPageHeader
 export const Spin: TSpin
+export const Markdown: MarkdownWrapper
