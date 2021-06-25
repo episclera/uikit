@@ -10,6 +10,7 @@ import {
   Space,
   PageHeader,
   Spin,
+  Markdown,
 } from '../index'
 
 // NOTE: all utils/configs are tested separately in theirs folders so no need to test here other logical things
@@ -26,6 +27,7 @@ describe('Weaver', () => {
     Space,
     PageHeader,
     Spin,
+    Markdown,
   ])('Should correctly re-export package: %s', pkg => {
     expect(pkg).toBeTruthy()
   })

@@ -2,6 +2,9 @@ import React from 'react'
 import { weaverTheme } from '@episclera/weaver-theme'
 import { TContainer, ContainerProps } from '../types'
 
+/**
+ * Container component used to wrap application content in order to have a fixed with for content
+ */
 const Container: TContainer = ({ children, ...rest }: ContainerProps) => (
   <div
     style={{

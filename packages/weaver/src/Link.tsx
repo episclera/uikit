@@ -3,6 +3,9 @@ import { Typography } from 'antd'
 import NextLink from 'next/link'
 import { TLink, LinkProps } from '../types'
 
+/**
+ * Link component created using next/link as router and antd-link as DOM styled element
+ */
 const Link: TLink = ({ children, className, href, ...rest }: LinkProps) => {
   return (
     <NextLink href={href} passHref {...rest}>
