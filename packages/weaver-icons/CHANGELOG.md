@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# 1.7.0 (2021-06-25)
+
+
+### Features
+
+* add markdown component ([0cada78](https://github.com/episclera/weaver/commit/0cada78067a0b9ae1f456d11c2448f6c8ca1537d))
+
+
+
+
+
 ## 1.6.3 (2021-06-22)
 
 **Note:** Version bump only for package @episclera/weaver-icons
