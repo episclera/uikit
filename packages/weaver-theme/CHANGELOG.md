@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# 1.11.0 (2021-06-29)
+
+
+### Features
+
+* image centering style fixes ([72bba78](https://github.com/episclera/weaver/commit/72bba787332f7dbfe277ee5890e2676f0e83736d))
+
+
+
+
+
 # 1.10.0 (2021-06-27)
 
 
