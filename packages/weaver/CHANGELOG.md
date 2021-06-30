@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# 1.17.0 (2021-06-30)
+
+
+### Features
+
+* add dayjs webpack moment replacement ([2795145](https://github.com/episclera/weaver/commit/279514598f06ba6054c4be8d5c94f3255b69ab45))
+
+
+
+
+
 # 1.16.0 (2021-06-29)
 
 
