@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# 1.12.0 (2021-07-02)
+
+
+### Features
+
+* add ancor props and export row gutters ([8b48a18](https://github.com/episclera/weaver/commit/8b48a18eb2512df7bba7889898d08739afc0ac68))
+
+
+
+
+
 # 1.11.0 (2021-06-30)
 
 
