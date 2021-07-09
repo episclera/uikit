@@ -20,9 +20,17 @@ const weaverTailwindConfig: WeaverTailwindConfig = {
       boxShadow,
       borderRadius,
     },
-    screens: Object.entries(screens).reduce((acc, [key, value]) => {
-      return { ...acc, [key.replace('screen-', '')]: value }
-    }, {}),
+    screens: Object.entries(screens).reduce(
+      (acc, [key, value]) => {
+        return { ...acc, [key.replace('screen-', '')]: value }
+      },
+      {
+        /**
+         *  Adding TW support for printer media queries it's not enabled by default even with jit mode
+         */
+        print: { raw: 'print' },
+      },
+    ),
   },
 }
 

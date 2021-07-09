@@ -3,8 +3,14 @@
 
 @plugin 'weaverTheme';
 
-// Ant fixes (Here we add fixes for ant-design components if we don't have special vars for that)
-
+/*
+* Antd fixes (Here we add fixes for ant-design components if we don't have special vars for that)
+*
+* ------------------------------------------------------------------------------
+* IMPORTANT: Use weaverTheme plugin to get THEME related variables but not antd vars directly
+* that's needed to have a single source of truth for theme variables
+* ------------------------------------------------------------------------------
+*/
 // Row negative margins fix
 .@{ant-prefix}-row {
   margin: 0px !important;
@@ -59,7 +65,7 @@
   align-items: center;
 }
 
-// Image object fit and radius fix
+// Image object fit and border radius fix
 .@{ant-prefix}-image {
   img {
     border-radius: weaverTheme('border-radius-base');

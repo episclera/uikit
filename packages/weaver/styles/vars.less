@@ -2,8 +2,30 @@
 
 @plugin 'weaverTheme';
 
-// -------- antd customization -------------------------------------------------
+/**
+* Antd customization
+*
+* ------------------------------------------------------------------------------
+* IMPORTANT: Use weaverTheme plugin to get THEME related variables but not antd vars directly
+* that's needed to have a single source of truth for theme variables
+* ------------------------------------------------------------------------------
+*/
+
+/**
+* Changing default non round borders to border-radius-base from weaverTheme
+*/
 // radius
 @border-radius-base: weaverTheme('border-radius-base');
+/**
+* Changing default to abusive shadow to box-shadow-base from weaverTheme
+*/
 // shadows
 @box-shadow-base: weaverTheme('box-shadow-base');
+
+/**
+* Changing default black tooltip background color to component-background and text color to base text-color from weaverTheme
+*/
+// Tooltip background color
+@tooltip-bg: weaverTheme('component-background');
+// Tooltip text color
+@tooltip-color: weaverTheme('text-color');
