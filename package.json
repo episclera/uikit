@@ -34,6 +34,7 @@
     "test:packages": "jest --coverage",
     "watch:test:packages": "jest --watch",
     "lint:packages:structure": "multipack lint",
+    "lint:packages:types": "tsc --pretty --noEmit --p . && echo \"Dummy command at the end to prevent files passing to tsc from lint-staged\"",
     "lint:packages:scripts": "eslint ./packages --ext .ts,.tsx --max-warnings=0",
     "fix:packages:scripts": "eslint ./packages --ext .ts,.tsx --fix --max-warnings=0",
     "lint:packages:styles": "stylelint \"./packages/**/*.less\" --syntax=less || exit 0",
@@ -42,7 +43,7 @@
   },
   "devDependencies": {
     "@commitlint/cli": "11.0.0",
-    "@episclera/multipack": "5.31.0",
+    "@episclera/multipack": "5.31.1",
     "@types/jest": "26.0.24",
     "eslint": "7.30.0",
     "husky": "7.0.1",
