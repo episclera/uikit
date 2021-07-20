@@ -1,7 +1,7 @@
 {
   "name": "@episclera/weaver-utils",
   "description": "A set of utils for weaver monorepo repository.",
-  "version": "1.18.3",
+  "version": "1.19.0",
   "license": "MIT",
   "publishConfig": {
     "access": "public"
@@ -51,7 +51,7 @@
     "webpack-cli": "4.7.2"
   },
   "dependencies": {
-    "@episclera/weaver-theme": "^1.13.3",
+    "@episclera/weaver-theme": "^1.14.0",
     "opencollective-postinstall": "2.0.3"
   },
   "peerDependencies": {

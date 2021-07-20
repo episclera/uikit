@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# 1.19.0 (2021-07-20)
+
+
+### Features
+
+* rm device context ([ac98494](https://github.com/episclera/weaver/commit/ac98494944883a3343a6bcbab566042cbe62aa4e))
+
+
+
+
+
 ## 1.18.3 (2021-07-20)
 
 **Note:** Version bump only for package @episclera/weaver-utils
