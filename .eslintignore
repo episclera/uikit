@@ -10,3 +10,4 @@ node_modules/
 
 # strapi files
 **/.cache/
+**/public
