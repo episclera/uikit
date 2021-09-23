@@ -43,7 +43,7 @@
   },
   "devDependencies": {
     "@commitlint/cli": "13.1.0",
-    "@episclera/multipack": "5.34.1",
+    "@episclera/multipack": "5.34.2",
     "@types/jest": "27.0.2",
     "eslint": "7.32.0",
     "husky": "7.0.2",

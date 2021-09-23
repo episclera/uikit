@@ -7,7 +7,9 @@ import Spin from '../Spin'
  * because jest says that it is used outside a component for some reason
  */
 jest.mock('@episclera/weaver-icons', () => ({
-  LoadingOutlined: () => <span data-testid='loading-outline-indicator' />,
+  LoadingOutlined: function MockLoadingOutlinedIcon() {
+    return <span data-testid='loading-outline-indicator' />
+  },
 }))
 
 describe('Spin', () => {

@@ -7,7 +7,9 @@ import Dragger from '../Dragger'
  * because jest says that it is used outside a component for some reason
  */
 jest.mock('@episclera/weaver-icons', () => ({
-  FolderOpenOutlined: () => <span data-testid='upload-dragger-icon' />,
+  FolderOpenOutlined: function MockFolderOpenOutlinedIcon() {
+    return <span data-testid='upload-dragger-icon' />
+  },
 }))
 
 describe('Dragger', () => {
